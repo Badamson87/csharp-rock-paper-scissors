@@ -3,9 +3,14 @@
 namespace hwapp
 {
     class Program
-    {
+    {  
         static void Main(string[] args)
         {
+            bool playing = true;
+            while(playing)
+            {
+
+     
             Console.WriteLine("rock paper scissors");
             string choice = Console.ReadLine();
             // if(choice != "rock" || choice != "paper" || choice != "scissors")
@@ -68,6 +73,7 @@ namespace hwapp
                 outcome = "Tie Game";
             }
             Console.WriteLine($"{outcome}");
+            }
         }
     }
 }
